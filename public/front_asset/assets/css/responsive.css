@@ -1,0 +1,1492 @@
+
+/* Normal desktop :1300px. */
+@media (min-width: 1300px) and (max-width: 1600px){
+
+.home-thumb img {
+  width: 100%;
+}
+
+.about-three-content h3 {
+  font-size: 34px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*===============blog-grid==================*/
+.Grid-content p {
+  font-size: 12px;
+}
+
+.blog-list-content p {
+  font-size: 13px;
+}
+
+.blog-info p a {
+  left: 186px;
+  top: 200px;
+}
+
+.blog-content p {
+  font-size: 15px;
+}
+
+.single_case_study_icon {
+  top: 330px;
+}
+
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1600px){
+
+
+
+  .home-thumb img {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+}
+
+  .about-two-content h3 {
+    font-size: 33px;
+}
+
+.about-three-content h3 {
+  font-size: 34px;
+}
+
+.newsletter-form button {
+  right: 95px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*===============blog-grid==================*/
+.Grid-content p {
+  font-size: 12px;
+}
+
+.blog-list-content p {
+  font-size: 13px;
+}
+
+.blog-info p a {
+  font-size: 13px;
+  left: 208px;
+  top: 194px;
+}
+
+.blog-content p {
+  font-size: 15px;
+}
+
+.single_case_study_icon {
+  top: 330px;
+}
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  a.logo_img img {
+    width: 91%;
+}
+
+a.main_sticky img {
+  width: 91%;
+}
+
+.header-main-button a {
+  font-size: 14px;
+  padding: 11px 28px;
+}
+
+.sticky .header-main-button a {
+  font-size: 14px;
+  padding: 11px 28px;
+}
+
+  .digital-marketing_menu>ul>li>a {
+    font-size: 16px;
+    padding: 30px 5px;
+}
+
+.home-thumb img {
+  width: 100%;
+}
+
+.home-content h1 {
+  font-size: 34px;
+}
+
+/*=================about-section=================*/
+
+.about-content h3 {
+  font-size: 32px;
+}
+
+.about-thumb img {
+  width: 100%;
+}
+
+/*============service-section==================*/
+.service-title h3 {
+  font-size: 32px;
+}
+
+.service-content h2 {
+  font-size: 20px;
+}
+
+.service-content p {
+  font-size: 12px;
+}
+
+ /*--------------call-do-section-------------------*/  
+
+ .call-do-title h3 {
+  font-size: 32px;
+}
+ 
+.call-do-title p {
+  font-size: 16px;
+}
+
+/*--------------about-two-section-------------------*/  
+.about-two-content h5 {
+  font-size: 16px;
+} 
+
+.about-two-content h3 {
+  font-size: 27px;
+}
+
+.about-two-content h2 {
+  font-size: 27px;
+}
+
+.about-two-disc p {
+  font-size: 15px;
+}
+
+
+/*==========about-three-section===========*/
+.about-three-content h5 {
+  font-size: 16px;
+}
+
+.about-three-content h3 {
+  font-size: 28px;
+}
+
+.about-three-content h2 {
+  font-size: 28px;
+}
+
+.about-three-content p {
+  font-size: 15px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+}
+
+/*==============blog-grid=============*/
+.Grid-content h2 a {
+  font-size: 17px;
+}
+
+.Grid-content p {
+  font-size: 10px;
+}
+
+.blog-list-content p {
+  font-size: 10px;
+}
+
+.blog-info p a {
+  left: 288px;
+}
+
+/*--------------portfolio-section-------------------*/          
+
+.our-portfolio-title p {
+  font-size: 15px;
+}
+
+.single_case_study_icon {
+  top: 260px;
+}
+
+/*--------------faq-section-------------------*/
+.tab_thumb img {
+  width: 100%;
+}
+
+.tab-title h3 {
+  font-size: 30px;
+}
+
+ul.accordion span {
+  font-size: 16px;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*--------------contact-section-------------------*/          
+
+.contact-sub-title h3 {
+  font-size: 30px;
+}
+
+.contact-sub-title h2 {
+  font-size: 30px;
+}
+
+/*-----------subscribe-----------*/
+
+.subscribe-title h3 {
+  font-size: 32px;
+}
+
+.subscribe-button a {
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  right: 82px;
+}
+
+.footer-social-icon ul li a {
+ margin: 0;
+}
+
+.footer-text p {
+  font-size: 15px;
+}
+
+.service-detail-title h3 {
+  font-size: 35px;
+}
+
+.service-detail-content h3 {
+  font-size: 25px;
+}
+
+.service-detail-content p {
+  font-size: 15px;
+}
+
+.service-about-content p {
+  font-size: 13px;
+}
+
+.service-detail-list ul li {
+  font-size: 25px;
+}
+
+.service-detail-info p {
+  font-size: 16px;
+}
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  nav.digital-marketing_menu {
+    display: none;
+}
+
+.sticky {
+  position: absolute!important;
+}
+
+/*-----------------hero-section----------------*/    
+
+.home-thumb img {
+  width: 100%;
+}
+
+.home-content h1 {
+  font-size: 32px;
+}
+
+
+/*-----------------service-section----------------*/  
+.service-title h3 {
+  font-size: 30px;
+}     
+
+.service-content p {
+  font-size: 15px;
+}
+
+/*-----------------blog-section----------------*/    
+.blog-list-content p {
+  font-size: 12px;
+}
+
+.blog-info p a {
+  font-size: 13px;
+  left: 189px;
+  top: 175px;
+}
+
+.blog-content p {
+  font-size: 14px;
+}
+
+/*-----------------about-two-section----------------*/   
+
+.about-two-content h3 {
+  font-size: 32px;
+}
+
+.about-three-content h3 {
+  font-size: 32px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+  margin: 25px 0 0;
+}
+
+
+/*-----------------call-do-section----------------*/       
+
+.call-do-title h3 {
+  font-size: 30px;
+}
+
+.newsletter-form button {
+  right: 127px;
+}
+
+.footer-bottom-content p {
+  font-size: 13px;
+}
+
+/*------------portfolio-detail---------------*/
+.our-portfolio-content h3 {
+  font-size: 25px;
+}
+
+.our-portfolio-box li {
+  font-size: 14px;
+}
+
+.our-portfolio-box li strong {
+  font-size: 16px;
+}
+  .our-portfolio-title p {
+    font-size: 11px;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*------------tap-section---------------*/
+.tab-title h3 {
+  font-size: 25px;
+}
+
+.tab_thumb img {
+  width: 100%;
+}
+
+ul.accordion span {
+  font-size: 16px;
+}
+
+.accordion li p {
+  font-size: 12px;
+}
+
+
+/*=============contact-section=============*/
+
+.contact-sub-title h3 {
+  font-size: 32px;
+}
+
+.contact-sub-title h2 {
+  font-size: 32px;
+}
+
+
+/*----------pricing-------------*/
+.pricing-title h3 {
+  font-size: 32px;
+}
+
+.subscribe-title h3 {
+  font-size: 28px;
+}
+
+.subscribe-title p {
+  font-size: 16px;
+}
+
+.pricing .tk {
+  font-size: 40px;
+}
+
+.pricing .currency {
+  font-size: 37px;
+}
+
+.subscribe-button a {
+  font-size: 10px;
+  padding: 8px 10px;
+ border-radius: 5px;
+}
+
+.single_case_study_icon {
+  top: 180px;
+}
+
+.service-detail-title h3 {
+  margin: 0 0 40px;
+}
+
+.bd-video {
+  margin: 60px 0 100px;
+}
+
+}
+
+/* Large Mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+  nav.digital-marketing_menu {
+    display: none;
+}
+
+.sticky {
+  position: absolute!important;
+}
+
+/*-----------------hero-section----------------*/    
+
+.home-thumb img {
+  width: 100%;
+}
+
+.home-content h1 {
+  font-size: 28px;
+}
+
+/*--------------about-section-------------*/  
+
+.about-content h3 {
+  font-size: 30px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+}
+
+.about-thumb img {
+  width: 100%;
+}
+   
+/*--------------service-section-------------*/    
+
+.service-title h3 {
+  font-size: 28px;
+}
+
+.service-title h2 {
+  font-size: 26px;
+}
+
+/*--------------about-two-section-------------*/  
+
+.about-two-content h5 {
+  font-size: 16px;
+}
+
+.about-two-content h3 {
+  font-size: 30px;
+}
+
+.about-two-content h2 {
+  font-size: 28px;
+}
+
+.about-three-content h5 {
+  font-size: 16px;
+}
+
+.about-three-content h3 {
+  font-size: 30px;
+}
+
+.about-three-content h2 {
+  font-size: 28px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+  margin: 25px 0 0;
+}
+
+/*--------------blog-section-------------*/   
+.blog-info p a {
+  display: none;
+}
+
+.blog-content h2 a {
+  font-size: 16px;
+}
+
+.blog-content p {
+  font-size: 9px;
+}
+
+.service-detail-title h3 {
+  margin: 10px 0 25px;
+}
+
+.service-detail-content h3 {
+  font-size: 24px;
+}
+
+.service-detail-content p {
+  font-size: 15px;
+}
+
+.service-about-content p {
+  font-size: 14px;
+}
+
+.service-detail-list ul li {
+  font-size: 25px;
+}
+
+.bd-video {
+  margin: 60px 0 90px;
+}
+
+.service-detail-info p {
+  font-size: 16px;
+}
+
+
+/*-------------blog-details-section-------------*/
+
+.breadcumb-title h1 {
+  font-size: 60px;
+}
+
+.blog-description h3 a {
+  font-size: 27px;
+}
+
+.blog-description p {
+  font-size: 15px;
+}
+
+.blog-details-inner h3 {
+  font-size: 27px;
+}
+
+/*--------------portfolio-section-------------*/    
+
+.single_case_study_icon {
+  display: none;
+}
+
+.case-study-title h3 a {
+  font-size: 17px;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*------------tap-section---------------*/
+.tab-title h3 {
+  font-size: 25px;
+  margin: 50px 0 10px;
+}
+
+.tab_thumb img {
+  width: 100%;
+}
+
+ul.accordion span {
+  font-size: 16px;
+}
+
+.accordion li p {
+  font-size: 12px;
+}
+
+/*========contact-section============*/
+
+.contact-sub-title h4 {
+  font-size: 18px;
+}
+
+.contact-sub-title h3 {
+  font-size: 32px;
+}
+
+.contact-sub-title h2 {
+  font-size: 30px;
+}
+
+/*-------------pricing-section---------------*/
+.pricing-title h5 {
+  font-size: 16px;
+}
+
+.pricing-title h3 {
+  font-size: 30px;
+}
+
+.pricing-title h2 {
+  font-size: 28px;
+}
+
+.pricing .currency {
+  font-size: 35px;
+}
+
+.pricing .tk {
+  font-size: 40px;
+}
+
+.subscribe-title h3 {
+  font-size: 22px;
+}
+
+.subscribe-title p {
+  font-size: 15px;
+}
+
+.subscribe-button a {
+  font-size: 13px;
+  padding: 12px 20px;
+}
+
+.testimonial-title h5 {
+  font-size: 16px;
+}
+
+.testimonial-title h3 {
+  font-size: 30px;
+}
+
+.call-do-title h3 {
+  font-size: 30px;
+}
+
+.call-do-title p {
+  font-size: 16px;
+}
+
+.newsletter-form button {
+  right: 98px;
+}
+
+}
+
+/* small mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+  nav.digital-marketing_menu {
+    display: none;
+}
+
+.sticky {
+  position: absolute!important;
+}
+
+/*-----------------hero-section----------------*/    
+
+.home-thumb img {
+  width: 100%;
+}
+
+.home-content h1 {
+  font-size: 28px;
+}
+
+.home-content p {
+  font-size: 15px;
+}
+
+.main-button {
+  font-size: 14px;
+}
+
+
+/*--------------service-section-------------*/ 
+.service-title h5 {
+  font-size: 16px;
+}
+
+.service-title h3 {
+  font-size: 26px;
+}
+
+.service-title h2 {
+  font-size: 27px;
+}
+
+.service-content h2 {
+  font-size: 20px;
+}
+
+.service-button a {
+  font-size: 13px;
+}
+
+/*--------------about-section-------------*/    
+
+.about-content h5 {
+  font-size: 16px;
+}
+
+.about-content h3 {
+  font-size: 30px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+}
+
+
+/*-------------contact-section-------------*/    
+
+.contact-sub-title h4 {
+  font-size: 16px;
+}
+
+.contact-sub-title h3 {
+  font-size: 30px;
+}
+
+.contact-sub-title h2 {
+  font-size: 28px;
+}
+
+.contact-sub-title p {
+  font-size: 15px;
+}
+
+/*--------------blog-section-------------*/    
+.blog-info p a {
+  display: none;
+}
+
+.service-detail-title h3 {
+  font-size: 32px;
+  margin: 10px 0 35px;
+}
+
+.service-detail-content h3 {
+  font-size: 19px;
+}
+
+.service-detail-content p {
+  font-size: 11px;
+}
+
+.service-about-content h2 {
+  font-size: 24px;
+}
+
+.service-about-content p {
+  font-size: 13px;
+}
+
+.service-detail-list ul li {
+  font-size: 20px;
+}
+
+.bd-video  {
+  display: none;
+}
+
+.service-detail-info p {
+  font-size: 13px;
+}
+
+/*-------------blog-details-section-------------*/
+
+.breadcumb-title h1 {
+  font-size: 60px;
+}
+
+.blog-description h3 a {
+  font-size: 25px;
+}
+
+.blog-description p {
+  font-size: 14px;
+}
+
+.blog-details-inner h3 {
+  font-size: 25px;
+}
+
+.blog-leave-title h3 {
+  font-size: 25px;
+}
+
+.form-button button {
+  font-size: 15px;
+}
+
+.single-widget-item h2 {
+  font-size: 28px;
+}
+
+.recent-post-title h3 {
+  font-size: 25px;
+}
+
+.rpost-content h4 a {
+  font-size: 15px;
+}
+
+.rpost-content span {
+  font-size: 13px;
+}
+
+.sidebar-title h4 {
+  font-size: 22px;
+}
+
+.tag-item a {
+  font-size: 14px;
+}
+
+/*--------------about-two-section-------------*/    
+.about-two-content h5 {
+  font-size: 16px;
+}
+
+.about-two-content h3 {
+  font-size: 28px;
+}
+
+.about-two-content h2 {
+  font-size: 28px;
+}
+
+.about-two-disc p {
+  font-size: 15px;
+}
+
+.about-two-button a {
+  font-size: 14px;
+}
+
+.about-three-content h5 {
+  font-size: 16px;
+}
+
+.about-three-content h3 {
+  font-size: 28px;
+}
+
+.about-three-content h2 {
+  font-size: 26px;
+}
+
+.about-three-content p {
+  font-size: 15px;
+}
+
+.about-three-button a {
+  font-size: 14px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+  margin: 25px 0 0;
+}
+
+/*--------------portfolio-section-------------*/
+
+.our-portfolio-title p {
+  font-size: 14px;
+}
+
+.single_case_study_icon {
+  top: 260px;
+}
+
+.case_study_menu ul li {
+  padding: 12px 18px;
+  margin: 0;
+}
+
+.about-two-thumb img {
+  margin-left: 0px; 
+ }
+
+/*------------tap-section---------------*/
+.tab-title h3 {
+  font-size: 25px;
+  margin: 50px 0 10px;
+}
+
+.tab_thumb img {
+  width: 100%;
+}
+
+ul.accordion span {
+  font-size: 16px;
+}
+
+/*------------pricing-section-------------*/
+.pricing-title h5 {
+  font-size: 16px;
+}
+
+.pricing-title h3 {
+  font-size: 30px;
+}
+
+.pricing-title h2 {
+  font-size: 28px;
+}
+
+.pricing .currency {
+  font-size: 35px;
+}
+
+.pricing .tk {
+  font-size: 40px;
+}
+
+.subscribe-title h3 {
+  font-size: 20px;
+}
+
+.subscribe-title p {
+  font-size: 13px;
+}
+
+.subscribe-button a {
+  font-size: 14px;
+}
+
+.testimonial-title h5 {
+  font-size: 16px;
+}
+
+.testimonial-title h3 {
+  font-size: 30px;
+}
+
+.call-do-title h3 {
+  font-size: 25px;
+}
+
+.call-do-title p {
+  font-size: 15px;
+}
+
+.newsletter-form button {
+  font-size: 14px;
+  right: 78px;
+}
+
+.footer-icon i {
+  font-size: 22px;
+}
+
+.footer-bottom-content p {
+  font-size: 15px;
+}
+
+.footer-bottom-menu.text-right {
+  display: none;
+}
+
+}
+
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+  nav.digital-marketing_menu {
+    display: none;
+}
+
+.sticky {
+  position: absolute!important;
+}
+
+/*-----------------hero-section----------------*/    
+
+.home-thumb img {
+  width: 100%;
+}
+  
+.home-content h1 {
+  font-size: 22px;
+}
+
+.home-content p {
+  font-size: 15px;
+}
+
+.main-button {
+  font-size: 13px;
+}
+
+/*--------------about-section-------------*/    
+
+.about-content h5 {
+  font-size: 16px;
+}
+
+.about-content h3 {
+  font-size: 22px;
+}
+
+.about-content h2 {
+  font-size: 21px;
+}
+
+.about-content p {
+  font-size: 11px;
+}
+
+.about-button a {
+  font-size: 12px;
+  padding: 9px 30px;
+}
+
+.about-thumb img {
+  width: 100%;
+  margin: 50px 0 0;
+}
+
+/*--------------blog-section-------------*/  
+.Grid-content h2 a {
+  font-size: 16px;
+}
+.Grid-content p {
+  font-size: 10px;
+}
+
+.blog-info p a {
+  display: none;
+}
+
+.blog-content h2 a {
+  font-size: 20px;
+}
+
+.blog-content p {
+  font-size: 12px;
+}
+
+/*---------------blog-details--------------*/
+
+.breadcumb-title h1 {
+  font-size: 48px;
+}
+
+.blog-details-meta {
+  display: none;
+}
+
+.blog-description h3 a {
+  font-size: 16px;
+}
+
+.blog-description p {
+  font-size: 12px;
+}
+
+.blog-details-inner h3 {
+  font-size: 18px;
+}
+
+.blog-details-social-icon ul li a {
+  margin-left: 5px;
+}
+
+.blog-leave-title h3 {
+  font-size: 20px;
+}
+
+.form-button button {
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.blog-list-left input[type="email"] {
+  padding: 8px;
+}
+
+.single-widget-item h2 {
+  font-size: 25px;
+}
+
+.recent-post-title h3 {
+  font-size: 25px;
+}
+
+.rpost-content h4 a {
+  font-size: 13px;
+}
+
+.rpost-content span {
+  font-size: 12px;
+}
+
+.sidebar-title h4 {
+  font-size: 22px;
+}
+
+.tag-item a {
+  font-size: 14px;
+}
+
+/*------------portfolio-detail---------------*/
+.breadcumbs-title h1 {
+  font-size: 40px;
+}
+
+.breadcumb-content-menu ul li span {
+  font-size: 16px;
+}
+
+.our-portfolio-content h3 {
+  font-size: 18px;
+}
+
+.our-portfolio-box li strong {
+  font-size: 10px;
+}
+
+.our-portfolio-box li {
+  font-size: 10px;
+}
+
+.port_dtl_social i {
+  height: 22px;
+  width: 20px;
+  line-height: 22px;
+}
+
+.our-portfolio-title h2 {
+  font-size: 22px;
+}
+
+.our-portfolio-title p {
+  font-size: 13px;
+}
+
+/*--------------about-two-section-------------*/    
+.about-two-content h5 {
+  font-size: 15px;
+}
+
+.about-two-content h3 {
+  font-size: 27px;
+}
+
+.about-two-content h2 {
+  font-size: 25px;
+}
+
+.about-two-disc p {
+  font-size: 16px;
+}
+
+.sec-widget-element ul li {
+  font-size: 12px;
+}
+
+.about-two-button a {
+  font-size: 14px;
+  padding: 9px 30px;
+}
+
+.about-three-content h5 {
+  font-size: 15px;
+}
+
+.about-three-content h3 {
+  font-size: 25px;
+}
+
+.about-three-content h2 {
+  font-size: 21px;
+}
+
+.about-three-content p {
+  font-size: 10px;
+}
+
+.about-three-button a  { 
+  font-size: 14px;
+  padding: 9px 30px;
+}
+
+.about-three-thumb img {
+  width: 100%;
+  margin: 40px 0 0;
+}
+
+/*--------------service-section-------------*/    
+
+.service-title h5 {
+  font-size: 15px;
+}
+
+.service-title h3 {
+  font-size: 24px;
+}
+
+.service-title h2 {
+  font-size: 22px;
+}
+
+.service-content h2 {
+  font-size: 20px;
+}
+
+.service-content p {
+  font-size: 12px;
+}
+
+.service-button a {
+  font-size: 12px;
+}
+
+/*------------------testimonial-section-------------*/
+
+.testimonial-title h5 {
+  font-size: 15px;
+}
+
+.testimonial-title h3 {
+  font-size: 24px;
+}
+
+.call-do-title h3 {
+  font-size: 18px;
+}
+
+.call-do-title p {
+  font-size: 16px;
+}
+
+.call-do-button a {
+  font-size: 14px;
+  padding: 9px 40px;
+}
+
+.newsletter-title h3 {
+  font-size: 20px;
+}
+
+.newsletter-title p {
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  font-size: 12px;
+  right: 15px;
+}
+
+.footer-bottom-content p {
+  font-size: 12px;
+}
+
+.footer-icon i {
+  font-size: 22px;
+}
+
+.about-two-thumb img {
+ margin-left: 0px; 
+}
+
+/*-------------portfolio-section--------------*/
+
+.single_case_study_icon {
+  display: none;
+}
+
+.service-detail-title h3 {
+  font-size: 25px;
+}
+
+.service-detail-content h3 {
+  font-size: 20px;
+}
+
+.service-detail-content p {
+  font-size: 13px;
+}
+
+.service-about-content h2 {
+  font-size: 16px;
+}
+
+.service-about-content p {
+  font-size: 13px;
+}
+
+.service-detail-list ul li {
+  font-size: 20px;
+}
+
+.bd-video {
+  display: none;
+}
+
+.service-detail-info p {
+  font-size: 12px;
+}
+/*-------------blog-section-----------*/
+
+.blog-list-content h2 a {
+  font-size: 17px;
+}
+
+.blog-list-content p {
+  font-size: 13px;
+}
+
+
+/*--------------footer-section-------------*/ 
+
+.company-info-desc p {
+  font-size: 14px;
+}
+
+.widget-title {
+  font-size: 22px;
+}
+
+.menu-quick-link-content ul li a {
+  font-size: 14px;
+}
+
+.footer-sub-disc p {
+  font-size: 14px;
+}
+
+.footer-inner-address p {
+  font-size: 14px;
+}
+
+.footer-inner-social p {
+  font-size: 14px;
+}
+
+.footer-inner-disc p {
+  font-size: 14px;
+}
+
+.footer-bottom-menu.text-right {
+  display: none;
+}
+
+/*============contact-section================*/
+
+.contact-sub-title h4 {
+  font-size: 13px;
+}
+
+.contact-sub-title h3 {
+  font-size: 18px;
+}
+
+.contact-sub-title h2 {
+  font-size: 20px;
+}
+
+/*-----------pricing-section--------------*/
+.pricing-title h5 {
+  font-size: 15px;
+}
+
+.pricing-title h3 {
+  font-size: 23px;
+}
+
+.pricing-title h2 {
+  font-size: 23px;
+}
+
+.pricing .currency {
+  font-size: 35px;
+}
+
+.pricing .tk {
+  font-size: 38px;
+}
+
+.price-btn a {
+  font-size: 14px;
+}
+
+.subscribe-title h3 {
+  font-size: 21px;
+}
+
+.subscribe-title p {
+  font-size: 15px;
+}
+
+.form-group input {
+  width: 218%;
+}
+
+.subscribe-button a {
+  display: none;
+ 
+}
+
+/*------------tap-section---------------*/
+.tab-title h3 {
+  font-size: 25px;
+  margin: 50px 0 10px;
+}
+
+.tab_thumb img {
+  width: 100%;
+}
+
+ul.accordion span {
+  font-size: 13px;
+}
+
+.accordion li p {
+  font-size: 13px;
+}
+
+}
+
