@@ -31,7 +31,8 @@
     <div class="login-box">
         <div class="card">
             <div class="card-header text-center pt-4">
-                <h2><strong>EAGESKOOL</strong></h2>
+                {{-- <h2><strong>EAGESKOOL</strong></h2> --}}
+                <img src="{{ asset('front_asset/images/main-logo.png')}}" alt="" style="height:60px;">
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.login.post') }}" method="post" class="add_form">
