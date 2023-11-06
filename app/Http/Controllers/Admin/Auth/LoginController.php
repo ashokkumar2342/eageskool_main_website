@@ -63,11 +63,6 @@ public function loginPost(Request $request){
     'captcha' => 'required|captcha' 
   ]);
   $admins=Admin::where('email',$request->email)->first();
-  if (!empty($admins)) { 
-    if ($admins->status==2) {
-      return redirect()->route('student.resitration.verification',Crypt::encrypt($admins->id)); 
-    }
-  }
   $credentials = [
     'email' => $request['email'],
     'password' => $request['password'],
@@ -81,8 +76,6 @@ public function loginPost(Request $request){
     }
 
   } 
-
-
   return Redirect()->back()->with(['message'=>'Invalid User or Password','class'=>'error']); 
 
 

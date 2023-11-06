@@ -136,4 +136,7 @@
 		</div>
 	</div>
 </div>
+<script src="{{ asset('admin_asset/dist/js/toastr.min.js') }}"></script>
+@include('admin.include.message')
 @include('front.include.footer')
+
