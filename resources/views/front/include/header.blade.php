@@ -174,10 +174,10 @@
             <li><a href="{{ url('support')}}"><strong>Support</strong></a></li>
           </ul>
           <div class="header-main-button upper">
-            <a href="{{ route('admin.login') }}">Login</a>
+            <a href="{{ route('front.bookAdemo')}}">Demo</a>
           </div>
           <div class="header-main-button upper">
-            <a href="#">Login</a>
+            <a href="{{ route('admin.login') }}">Login</a>
           </div>
           
         </nav>
