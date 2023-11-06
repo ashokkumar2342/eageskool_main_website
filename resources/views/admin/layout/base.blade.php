@@ -49,16 +49,16 @@
   <style type="text/css" media="screen">
 
     .content-wrapper, .right-side{
-        background-color: #d4d9e0;
+        background-color: #ecf0f5;
     }
     .card{
-        border-radius:2rem;
+        border-radius:1.5rem;
     }
     .form-control{
-      border-radius:1rem;  
+      border-radius:2rem;  
     }
     .modal-content{
-      border-radius:2rem;  
+      border-radius:1.5rem;  
     }
     a.btn{
       border-radius:0.90rem;  
@@ -73,7 +73,7 @@
       
      }    
 
-      .fa-asterisk {
+    .fa-asterisk {
      color: red;
      font-size:7px; 
      vertical-align: super;
@@ -95,6 +95,18 @@
     height: 38px;
     user-select: none;
     -webkit-user-select: none;
+   }
+
+   fieldset.fieldset_border{
+    border: 5px solid #ddd !important;
+    margin: 1px;
+    xmin-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    width: 100%;
    }
 
   </style>

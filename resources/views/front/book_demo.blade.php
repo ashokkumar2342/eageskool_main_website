@@ -1,5 +1,5 @@
 @include('front.include.header')
-
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <style type="text/css">
 	.form-group select {
 	        height: 35px;
@@ -74,7 +74,7 @@
 						<div class="row">
 							<div class="col-lg-12"><h3><strong>Book a Demo</strong></h3></div>						
 						</div>
-						<form action="{{ route('front.bookAdemo.store') }}" method="post" no-reset="true">
+						<form action="{{ route('front.bookAdemo.store') }}" method="post" class="add_form">
 						{{csrf_field()}}
 							<div class="row">
 								<div class="col-lg-12 form-group">
@@ -126,7 +126,7 @@
 								</div>
 								<p class="text-danger">{{ $errors->first('captcha') }}</p>	
 								<div class="col-lg-12 form-group" style="margin-top:10px">
-									<button type="submit" class="btn btn-primary form-control" style="border-radius:2rem;">Submit</button>
+									<input type="submit" class="btn btn-primary form-control" style="border-radius:2rem;" value="Submit">
 								</div>
 							</div>
 						</form>
@@ -136,7 +136,9 @@
 		</div>
 	</div>
 </div>
+<script src="{{ asset('admin_asset/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('admin_asset/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('admin_asset/dist/js/adminlte.min.js') }}"></script>
 <script src="{{ asset('admin_asset/dist/js/toastr.min.js') }}"></script>
 @include('admin.include.message')
 @include('front.include.footer')
-

@@ -1,4 +1,4 @@
-<div class="modal-dialog modal-lg">
+<div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
       <h4 class="modal-title">Edit</h4>
@@ -11,21 +11,21 @@
                 {{ csrf_field() }}
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">First Name</label>
                                   <span class="fa fa-asterisk"></span>
                                   <input Name="first_name" class="form-control" value="{{ $accounts[0]->first_name }}"  maxlength="50" placeholder="Enter first name">
                                 </div>                                
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">Last Name</label>
 
                                   <input Name="last_name" class="form-control"  value="{{ $accounts[0]->last_name }}"  maxlength="50" placeholder="Enter last name">
                                 </div>                                
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                <div class="form-group">
                                  <label>Role</label>
                                  <span class="fa fa-asterisk"></span>
@@ -36,21 +36,21 @@
                                       </select>
                                 </div>                               
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">E-mail ID</label>
                                   <span class="fa fa-asterisk"></span>
                                   <input type="text" disabled="" name="email" class="form-control" value="{{ $accounts[0]->email }}" id="exampleInputEmail1" maxlength="50" placeholder="Enter email">
                                 </div>                                
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="form-group">
                                   <label for="Password">Password</label>
                                   <span class="fa fa-asterisk"></span>
                                   <input type="password" name="password" class="form-control" id="exampleInputPassword1" maxlength="15" placeholder="Password" min="6">
                                 </div>                               
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">Mobile.No.</label>
                                   <span class="fa fa-asterisk"></span>
@@ -59,11 +59,10 @@
                             </div>
                              
                         </div>                     
-                                        
-                    <!-- /.box-body -->
-                    <div class="box-footer text-center" style="margin-top: 30px">
-                      <button type="submit" class="btn btn-primary form-control">Update</button>
-                    </div>
+                        <div class="modal-footer card-footer justify-content-between">
+                          <button type="submit" class="btn btn-success form-control">Update</button>
+                          <button type="button" class="btn btn-danger form-control" data-dismiss="modal">Close</button>
+                        </div>
                 </form>
     </div>
   </div>
