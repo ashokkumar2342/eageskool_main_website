@@ -33,6 +33,11 @@ Route::group(['middleware' => 'admin'], function() {
 	    Route::get('Delete{id}', 'MasterController@delete')->name('admin.Master.delete');
         //-districts-//
 	});
+
+	Route::group(['prefix' => 'booking'], function() {
+	    Route::get('demo-request-list', 'BookingController@demoRequestList')->name('admin.booking.demo.request.list');	   
+	    Route::post('demo-request-list-show', 'BookingController@demoRequestListShow')->name('admin.booking.demo.request.list.show');	   
+	});
 	
 
     

@@ -17,7 +17,7 @@
                     <fieldset class="fieldset_border">
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-bordered table-striped table-hover">
-                                <thead>
+                                <thead class="thead-dark">
                                     <tr>
                                         <th>Sr.No.</th> 
                                         <th>Name</th>
