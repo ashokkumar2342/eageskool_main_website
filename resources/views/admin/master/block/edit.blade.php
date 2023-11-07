@@ -7,20 +7,24 @@
       </button>
     </div>
     <div class="modal-body">
-      <form action="{{ route('admin.Master.store',$States[0]->id) }}" method="post" class="add_form" content-refresh="state_table" button-click="btn_close">
+      <form action="{{ route('admin.Master.BlockMCSStore',$BlocksMcs[0]->id) }}" method="post" class="add_form" select-triger="district_select_box" button-click="btn_close">
         {{ csrf_field() }}
-        <div class="card-body">
+        <div class="box-body"> 
+        
+            <input type="hidden" name="states" value="{{ $BlocksMcs[0]->states_id }}">
+            <input type="hidden" name="district" value="{{ $BlocksMcs[0]->districts_id }}"> 
           <div class="form-group">
-            <label for="exampleInputEmail1">Code</label>
+            <label for="exampleInputEmail1">Block Code</label>
             <span class="fa fa-asterisk"></span>
-            <input type="text" name="code" class="form-control" placeholder="Enter Code" value="{{ $States[0]->code }}" maxlength="5">
+            <input type="text" name="code" class="form-control" placeholder="Enter Code" value="{{ $BlocksMcs[0]->code }}" maxlength="5">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">States Name</label>
+            <label for="exampleInputPassword1">Block Name</label>
             <span class="fa fa-asterisk"></span>
-            <input type="text" name="name" class="form-control" placeholder="Enter Name (English)" value="{{ $States[0]->name }}" maxlength="50">
-          </div>
-          
+            <input type="text" name="name" class="form-control" placeholder="Enter Name " value="{{ $BlocksMcs[0]->name }}" maxlength="50">
+          </div> 
+        </div>
+        
         <div class="modal-footer card-footer justify-content-between">
           <button type="submit" class="btn btn-success form-control">Update</button>
           <button type="button" class="btn btn-danger form-control" data-dismiss="modal">Close</button>
