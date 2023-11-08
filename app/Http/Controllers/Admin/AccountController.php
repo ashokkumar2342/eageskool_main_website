@@ -102,6 +102,115 @@ class AccountController extends Controller
             return redirect()->back()->with(['class'=>'error','message'=>'Whoops ! Look like somthing went wrong ..']);
             }
     }
+//---------------------------------------//
+    Public function DistrictsAssign()
+    {
+        $admin=Auth::guard('admin')->user(); 
+        // $users=DB::select(DB::raw("select `id`, `first_name`, `last_name`, `email`, `mobile` from `admins`where `status` = 1 and `role_id` = 2 and `role_id` >= (Select `role_id` from `admins` where `id` =$admin->id)Order By `first_name`")); 
+        $users=DB::select(DB::raw("select `id`, `first_name`, `last_name`, `email`, `mobile` from `admins` where `status` = 1 and `role_id` <> 1 Order By `first_name`")); 
+        return view('admin.account.assign.district.index',compact('users'));
+       
+    }
+
+    Public function StateDistrictsSelect(Request $request)
+    {  
+        $user_id = intval($request->id);
+        $States = DB::select(DB::raw("select * from `states` order by `name`;"));   
+        $DistrictBlockAssigns = DB::select(DB::raw("select `uda`.`id`, `dis`.`name` from `user_district_assigns` `uda` inner join `districts` `dis` on `dis`.`id` = `uda`.`district_id` where `uda`.`user_id` = $user_id order by `name`;"));
+        return view('admin.account.assign.district.select_box',compact('DistrictBlockAssigns','States'));
+    }
+
+     
+
+     Public function DistrictsAssignStore(Request $request)
+     {    
+        $rules=[
+         'user' => 'required',  
+         'district' => 'required', 
+        ]; 
+        $validator = Validator::make($request->all(),$rules);
+        if ($validator->fails()) {
+            $errors = $validator->errors()->all();
+            $response=array();
+            $response["status"]=0;
+            $response["msg"]=$errors[0];
+            return response()->json($response);// response as json
+        }
+        $user_id = intval($request->user);
+        $district_id = intval($request->district);
+        $rs_fetch = DB::select(DB::raw("select * from `user_district_assigns` where `user_id` = $user_id and `district_id` = $district_id limit 1;"));
+        if (count($rs_fetch)>0) {
+            $rs_update = DB::select(DB::raw("update `user_district_assigns` set `district_id` = $district_id where `user_id` = $user_id and `district_id` = $district_id limit 1;"));
+        }else{
+            $rs_save = DB::select(DB::raw("insert into `user_district_assigns`(`user_id`, `district_id`) values($user_id, $district_id);"));
+        }
+        $response=['status'=>1,'msg'=>'Save Successfully'];
+        return response()->json($response);
+    }
+
+    public function DistrictsAssignDelete($id)
+    {
+        $id = Crypt::decrypt($id);
+        $rs_fetch = DB::select(DB::raw("delete from `user_district_assigns` where `id` = $id limit 1;"));
+        $response=['status'=>1,'msg'=>'Delete Successfully'];
+        return response()->json($response);   
+    }
+
+//block assign
+
+    Public function BlockAssign()
+    {
+        $admin = Auth::guard('admin')->user(); 
+        $users = DB::select(DB::raw("select `id`, `first_name`, `last_name`, `email`, `mobile` from `admins`where `status` = 1 and `role_id` <> 1 Order By `first_name`")); 
+        return view('admin.account.assign.block.index',compact('users'));
+       
+    }
+    
+    Public function DistrictBlockAssign(Request $request)
+    { 
+        $user_id = intval($request->id);
+        $States = DB::select(DB::raw("select * from `states` order by `name`;"));   
+        $DistrictBlockAssigns = DB::select(DB::raw("select `uba`.`id`, `dis`.`name` as `d_name`, `blm`.`name` as `b_name` from `user_block_assigns` `uba` inner join `districts` `dis` on `dis`.`id` = `uba`.`district_id` inner join `blocks_mcs` `blm` on `blm`.`id` = `uba`.`block_id` where `uba`.`user_id` = $user_id;")); 
+     
+        return view('admin.account.assign.block.select_box',compact('DistrictBlockAssigns','States'));
+    }
+
+    Public function DistrictBlockAssignStore(Request $request)
+    {     
+        $rules=[
+         'user' => 'required',  
+         'district' => 'required', 
+         'block' => 'required', 
+        ]; 
+        $validator = Validator::make($request->all(),$rules);
+        if ($validator->fails()) {
+            $errors = $validator->errors()->all();
+            $response=array();
+            $response["status"]=0;
+            $response["msg"]=$errors[0];
+            return response()->json($response);// response as json
+        }
+
+        $user_id = intval($request->user);
+        $district_id = intval($request->district);
+        $block_id = intval($request->block);
+        $rs_fetch = DB::select(DB::raw("select * from `user_block_assigns` where `user_id` = $user_id and `district_id` = $district_id and `block_id` = $block_id limit 1;"));
+        if (count($rs_fetch)>0) {
+            $rs_update = DB::select(DB::raw("update `user_block_assigns` set `district_id` = $district_id, `block_id` = $block_id where `user_id` = $user_id and `district_id` = $district_id and `block_id` = $block_id limit 1;"));
+        }else{
+            $rs_save = DB::select(DB::raw("insert into `user_block_assigns`(`user_id`, `district_id`, `block_id`) values($user_id, $district_id, $block_id);"));
+        }
+        $response=['status'=>1,'msg'=>'Save Successfully'];
+        return response()->json($response);  
+    }
+
+    public function DistrictBlockAssignDelete($id)
+    {
+        $id = Crypt::decrypt($id);
+        $rs_fetch = DB::select(DB::raw("delete from `user_block_assigns` where `id` = $id limit 1;"));
+        $response=['status'=>1,'msg'=>'Delete Successfully'];
+        return response()->json($response); 
+    }
   
 
 }
