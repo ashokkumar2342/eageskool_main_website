@@ -8,7 +8,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
             <a href="{{ route('admin.dashboard') }}" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              {{-- <i class="nav-icon fas fa-tachometer-alt"></i> --}}
+              <img src="{{ asset('front_asset/icon/Live_Dashboard.png')}}" alt="" style="height:35px;width: 35px;">
               <p>Dashboard</p>
             </a> 
           </li> 
@@ -28,7 +29,8 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="{{ $menuType->icon }}"></i>
+              {{-- <i class="{{ $menuType->icon }}"></i> --}}
+              <img src="{{ asset($menuType->icon)}}" alt="" style="height:35px;width: 35px;">
               <p>
                 <strong>{{ $menuType->name }}</strong>
                 <i class="fas fa-angle-left right"></i> 
