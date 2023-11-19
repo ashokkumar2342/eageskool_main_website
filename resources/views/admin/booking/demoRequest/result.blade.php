@@ -25,7 +25,7 @@
 							<td>{{$rs_result_val->email}}</td>
 							<td>{{$rs_result_val->message}}</td>
 							<td>
-								<a type="button" href="#" class="btn btn-sm btn-primary">Action</a>
+								<a type="button" onclick="callPopupLarge(this, '{{ route('admin.booking.demo.assign', $rs_result_val->id) }}')" class="btn btn-sm btn-primary">Assign To</a>
 							</td>
 						</tr>	
 					@endforeach

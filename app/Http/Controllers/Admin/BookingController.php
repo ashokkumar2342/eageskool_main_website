@@ -46,4 +46,20 @@ class BookingController extends Controller
         }catch (Exception $e){}
     }
 
+    public function demoAssign($booking_id)
+    {
+        $admin=Auth::guard('admin')->user();    
+        $accounts = DB::select(DB::raw("select `a`.`id`, `a`.`first_name`, `a`.`last_name`, `a`.`email`, `a`.`mobile`, `a`.`status`, `r`.`name` from `admins` `a`Inner Join `roles` `r` on `a`.`role_id` = `r`.`id`where`a`.`status` = 1 and `a`.`id` > 1 Order By `a`.`first_name`;"));
+        return view('admin.booking.demoRequest.assign_to', compact('accounts', 'booking_id'));
+    }
+
+    public function demoAssignSave($booking_id, $assign_user_id)
+    {
+        $assign_user_id = Crypt::decrypt($assign_user_id);
+        $booking_id = Crypt::decrypt($booking_id);
+        $rs_save = DB::select(DB::raw("insert into `book_demo_assign`(`assign_user_id`, `booking_id`) values($assign_user_id, $booking_id);"));
+        $response=['status'=>1,'msg'=>'Assign To Successfully'];
+        return response()->json($response);   
+    }
+
 }

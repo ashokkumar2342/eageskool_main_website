@@ -69,6 +69,8 @@ Route::group(['middleware' => 'admin'], function() {
 	Route::group(['prefix' => 'booking'], function() {
 	    Route::get('demo-request-list', 'BookingController@demoRequestList')->name('admin.booking.demo.request.list');	   
 	    Route::post('demo-request-list-show', 'BookingController@demoRequestListShow')->name('admin.booking.demo.request.list.show');	   
+	    Route::get('demo-assign/{booking_id}', 'BookingController@demoAssign')->name('admin.booking.demo.assign');	   
+	    Route::get('demo-assign-save/{booking_id}/{user_id}', 'BookingController@demoAssignSave')->name('admin.booking.demo.assign.save');	   
 	});
 	
 
