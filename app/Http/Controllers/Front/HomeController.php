@@ -91,8 +91,45 @@ class HomeController extends Controller
     }
 
     public function supportPost(Request $request)
-    {   $id = Crypt::encrypt(1);
-        return redirect()->route('front.support.token',$id);
+    {   
+        $this->validate($request, [
+            'institute_name' => 'required',
+            'mobile_no' => 'required',
+            'email' => 'required',
+            'captcha' => 'required|captcha' 
+        ]);
+        $institute_name = MyFuncs::removeSpacialChr($request->institute_name);
+        $mobile_no = MyFuncs::removeSpacialChr($request->mobile_no);
+        $email = MyFuncs::removeSpacialChr($request->email);
+        $message = MyFuncs::removeSpacialChr($request->message);
+        $filename = '';
+        if ($request->hasFile('screen_shot')){ 
+            $screen_shot=$request->screen_shot;
+            $folder_path = 'front/support/'.date('d-m-Y');
+            $filename = time().'.jpg'; 
+            $screen_shot->storeAs($folder_path,$filename);
+        }
+        $rs_save = DB::select(DB::raw("insert into `support`(`institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
+        $email_id = $email;
+        $subject = 'Eageskool Demo';
+        $message = $message;
+        $message_2 = $institute_name;
+        $file = '';
+        $data["email"] = $email_id;
+        $data["title"] = $subject;
+        $data["m_detail"] = $message;
+        $data["m_detail_2"] = $message_2;
+
+        Mail::send('emails.message', $data, function($message)use($data, $file) {
+            $message->to($data["email"])
+            ->from('info@eageskool.com', 'Eageskool')
+            ->subject($data["title"]);
+            // ->attach($file);            
+        });
+
+        return Redirect()->back()->with(['message'=>'Submitted Successfully','class'=>'success']);
+        // $id = Crypt::encrypt(1);
+        // return redirect()->route('front.support.token',$id);
     }
 
     public function supportToken($id)

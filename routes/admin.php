@@ -72,6 +72,11 @@ Route::group(['middleware' => 'admin'], function() {
 	    Route::get('demo-assign/{booking_id}', 'BookingController@demoAssign')->name('admin.booking.demo.assign');	   
 	    Route::get('demo-assign-save/{booking_id}/{user_id}', 'BookingController@demoAssignSave')->name('admin.booking.demo.assign.save');	   
 	});
+
+	Route::group(['prefix' => 'support'], function() {
+	    Route::get('index', 'SupportController@index')->name('admin.support.index');  
+	    Route::post('show', 'SupportController@show')->name('admin.support.show');  
+	});
 	
 
     

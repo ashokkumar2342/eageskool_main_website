@@ -71,24 +71,24 @@
 						<div class="row">
 							<div class="col-lg-12"><h3><strong>Support</strong></h3></div>						
 						</div>
-						<form action="{{ route('front.support.post') }}" method="post">
+						<form action="{{ route('front.support.post') }}" method="post" class="add_form" enctype="multipart/form-data">
 						{{csrf_field()}}
 							<div class="row">
 								<div class="col-lg-12 form-group">
-									<input type="text" name="Institute_Name" class="form-control" placeholder="Institute Name">
+									<input type="text" name="institute_name" class="form-control" placeholder="Institute Name" required>
 								</div>
 								<div class="col-lg-12 form-group">
-									<input type="text" name="Mobile_no" class="form-control" placeholder="Mobile No.">
+									<input type="text" name="mobile_no" class="form-control" placeholder="Mobile No." required>
 								</div>
 								<div class="col-lg-12 form-group">
-									<input type="text" name="Email" class="form-control" placeholder="Email">
+									<input type="text" name="email" class="form-control" placeholder="Email" required>
 								</div>
 								<div class="col-lg-12 form-group">
 									<textarea class="form-control" name="message" placeholder="Message"></textarea>
 								</div>
 								<div class="col-lg-12 form-group">
 									<label>Screen Shot</label>
-									<input type="file" name="file" class="form-control" placeholder="screen Shoot">
+									<input type="file" name="screen_shot" class="form-control" placeholder="screen Shoot">
 								</div>
 								<div class="col-lg-12" style="margin-top:10px">
 								     <div class="captcha">
