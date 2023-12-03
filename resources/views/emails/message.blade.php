@@ -5,9 +5,9 @@
 	<style type="text/css">
 </style>
 </head>
-<body> 
-	
-	<p>Dear {{$m_detail}},{{$m_detail_2}} 
+<body {{-- style="background-image: url('{{ asset('mail/bg_files_path/1.jpeg') }}');" --}}> 
+	<img src="{{ asset('mail/bg_files_path/1.jpeg') }}" alt="">
+	{{-- <p>Dear {{$m_detail}},{{$m_detail_2}} 
 	<br>
 	Greetings from eageskool. 
 	we are thankful for showing your intrest in eageskool and excited to demonstrate our school management software eageskool for obtaining a chance to provide our services for your school. 
@@ -24,7 +24,7 @@
 	<br>
 	Regional Manager
 	<br>
-	9017071001</p>
+	9017071001</p> --}}
 
 </body>
 </html>
