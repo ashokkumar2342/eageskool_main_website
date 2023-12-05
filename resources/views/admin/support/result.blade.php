@@ -9,6 +9,7 @@
 						<th>Mobile No.</th>
 						<th>Email Id</th>
 						<th>Message</th>
+						<th>Screen Shot</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -23,6 +24,9 @@
 							<td>{{$rs_result_val->mobile_no}}</td>
 							<td>{{$rs_result_val->email_id}}</td>
 							<td>{{$rs_result_val->message}}</td>
+							<td>
+								<a href="{{ route('admin.support.screenshot',Crypt::encrypt($rs_result_val->file)) }}" target="blank" style="margin:10px;color: blue;">{{ $rs_result_val->file?'Open the Screen Shot!' : '' }}</a>
+							</td>
 							<td>
 								{{-- <a type="button" onclick="callPopupLarge(this, '{{ route('admin.booking.demo.assign', $rs_result_val->id) }}')" class="btn btn-sm btn-primary">Assign To</a> --}}
 							</td>

@@ -46,4 +46,11 @@ class SupportController extends Controller
         }catch (Exception $e){}
     }
 
+    public function screenshot($path)
+    {
+        $path = Crypt::decrypt($path);
+        $documentUrl = Storage_path() . '/app/front/support/'.$path; 
+        return response()->file($documentUrl); 
+    }
+
 }

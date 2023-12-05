@@ -76,6 +76,7 @@ Route::group(['middleware' => 'admin'], function() {
 	Route::group(['prefix' => 'support'], function() {
 	    Route::get('index', 'SupportController@index')->name('admin.support.index');  
 	    Route::post('show', 'SupportController@show')->name('admin.support.show');  
+	    Route::get('screenshot/{id?}', 'SupportController@screenshot')->name('admin.support.screenshot');  
 	});
 	
 

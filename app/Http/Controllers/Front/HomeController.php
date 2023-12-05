@@ -105,7 +105,7 @@ class HomeController extends Controller
         $filename = '';
         if ($request->hasFile('screen_shot')){ 
             $screen_shot=$request->screen_shot;
-            $folder_path = 'front/support/'.date('d-m-Y');
+            $folder_path = 'front/support';
             $filename = time().'.jpg'; 
             $screen_shot->storeAs($folder_path,$filename);
         }
