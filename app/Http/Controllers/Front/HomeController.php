@@ -111,7 +111,7 @@ class HomeController extends Controller
         }
         $rs_save = DB::select(DB::raw("insert into `support`(`institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
         $email_id = $email;
-        $subject = 'Eageskool Demo';
+        $subject = 'Eageskool Support';
         $message = $message;
         $message_2 = $institute_name;
         $file = '';
@@ -120,7 +120,7 @@ class HomeController extends Controller
         $data["m_detail"] = $message;
         $data["m_detail_2"] = $message_2;
 
-        Mail::send('emails.message', $data, function($message)use($data, $file) {
+        Mail::send('emails.support', $data, function($message)use($data, $file) {
             $message->to($data["email"])
             ->from('info@eageskool.com', 'Eageskool')
             ->subject($data["title"]);
