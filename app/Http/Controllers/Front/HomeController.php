@@ -122,13 +122,22 @@ class HomeController extends Controller
         $data["title"] = $subject;
         $data["m_detail"] = $message;
         $data["ticket_no"] = $six_digit_random_number;
-
-        Mail::send('emails.support', $data, function($message)use($data, $file) {
-            $message->to($data["email"])
-            ->from('info@eageskool.com', 'Eageskool')
-            ->subject($data["title"]);
-            // ->attach($file);            
-        });
+        if ($request->hasFile('screen_shot')){ 
+            $file=$request->screen_shot;
+            Mail::send('emails.support', $data, function($message)use($data, $file) {
+                $message->to($data["email"])
+                ->from('info@eageskool.com', 'Eageskool')
+                ->subject($data["title"])
+                ->attach($file);            
+            });
+        }else{
+            Mail::send('emails.support', $data, function($message)use($data, $file) {
+                $message->to($data["email"])
+                ->from('info@eageskool.com', 'Eageskool')
+                ->subject($data["title"]);
+                // ->attach($file);            
+            });  
+        }
 
         return Redirect()->back()->with(['message'=>'Submitted Successfully','class'=>'success']);
         // $id = Crypt::encrypt(1);
