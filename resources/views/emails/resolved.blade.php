@@ -24,8 +24,8 @@ body, html {
 </head>
 <body>
 
-<div class="bg" style="height:400px">
-    <table width="100%" style="padding-top: 20px;">
+<div class="bg" style="height:500px">
+    <table width="100%" style="padding-top: 80px;">
         <tr>
             <td style="text-align: center;font-size: 20px;"><strong>Ticket No. :: {{$ticket_no}}</strong></td>
         </tr>
