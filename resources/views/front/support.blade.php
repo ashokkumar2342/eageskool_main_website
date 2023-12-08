@@ -88,7 +88,7 @@
 								</div>
 								<div class="col-lg-12 form-group">
 									<label>Screen Shot</label>
-									<input type="file" name="screen_shot" class="form-control" placeholder="screen Shoot">
+									<input type="file" name="screen_shot" class="form-control" placeholder="screen Shoot" accept="image/*">
 								</div>
 								<div class="col-lg-12" style="margin-top:10px">
 								     <div class="captcha">

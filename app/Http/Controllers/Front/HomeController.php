@@ -102,6 +102,7 @@ class HomeController extends Controller
         $mobile_no = MyFuncs::removeSpacialChr($request->mobile_no);
         $email = MyFuncs::removeSpacialChr($request->email);
         $message = MyFuncs::removeSpacialChr($request->message);
+        $date = date('Y-m-d');
         $filename = '';
         if ($request->hasFile('screen_shot')){ 
             $screen_shot=$request->screen_shot;
@@ -111,7 +112,7 @@ class HomeController extends Controller
         }
 
         $six_digit_random_number = random_int(100000, 999999);
-        $rs_save = DB::select(DB::raw("insert into `support`(`ticket_no`, `institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$six_digit_random_number', '$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
+        $rs_save = DB::select(DB::raw("insert into `support`(`ticket_no`, `date`, `institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$six_digit_random_number', '$date', '$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
         $email_id = $email;
         $subject = 'Eageskool Support';
         $message = $message;
