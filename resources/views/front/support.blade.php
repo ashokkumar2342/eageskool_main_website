@@ -97,7 +97,7 @@
 								    </div>
 								</div>
 								<div class="col-lg-12" style="margin-top:10px">
-								    <input type="text" id="captcha" name="captcha" class="form-control" placeholder="Enter Captcha" aria-label="Password" aria-describedby="password-addon">
+								    <input type="text" id="captcha" name="captcha" class="form-control" placeholder="Enter Captcha" aria-label="Password" aria-describedby="password-addon" required>
 								</div>
 								<p class="text-danger">{{ $errors->first('captcha') }}</p>	
 								<div class="col-lg-12 form-group" style="margin-top:10px">

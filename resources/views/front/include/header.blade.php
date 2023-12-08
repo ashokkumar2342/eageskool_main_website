@@ -114,7 +114,7 @@
                 <li><a href="{{ url('service')}}"><strong>Product</strong></a></li>
                 <li><a href="{{ url('pricing')}}"><strong>Pricing</strong></a></li>
                 <li><a href="{{ url('contact')}}"><strong>Contact</strong></a></li>
-                <li><a href="{{ url('faq')}}"><strong>FAQS</strong></a></li>
+                {{-- <li><a href="{{ url('faq')}}"><strong>FAQS</strong></a></li> --}}
                 <li><a href="{{ url('support')}}"><strong>Support</strong></a></li>
               </ul>
               <!-- header button -->
@@ -170,14 +170,14 @@
             <li><a href="{{ url('service')}}"><strong>Product</strong></a></li>
             <li><a href="{{ url('pricing')}}"><strong>Pricing</strong></a></li>
             <li><a href="{{ url('contact')}}"><strong>Contact</strong></a></li>
-            <li><a href="{{ url('faq')}}"><strong>FAQS</strong></a></li>
+            {{-- <li><a href="{{ url('faq')}}"><strong>FAQS</strong></a></li> --}}
             <li><a href="{{ url('support')}}"><strong>Support</strong></a></li>
           </ul>
           <div class="header-main-button upper">
-            <a href="{{ route('front.bookAdemo')}}">Demo</a>
+            <a href="{{ route('front.bookAdemo')}}"><strong>Demo</strong></a>
           </div>
           <div class="header-main-button upper">
-            <a href="{{ route('admin.login') }}">Login</a>
+            <a href="{{ route('admin.login') }}"><strong>Login</strong></a>
           </div>
           
         </nav>

@@ -10,7 +10,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url('{{ asset('mail/bg_files_path/support.jpeg') }}');
+  background-image: url('{{ asset('mail/bg_files_path/resolved.jpeg') }}');
 
   /* Full height */
   height: 100%; 

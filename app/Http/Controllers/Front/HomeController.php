@@ -109,7 +109,9 @@ class HomeController extends Controller
             $filename = time().'.jpg'; 
             $screen_shot->storeAs($folder_path,$filename);
         }
-        $rs_save = DB::select(DB::raw("insert into `support`(`institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
+
+        $six_digit_random_number = random_int(100000, 999999);
+        $rs_save = DB::select(DB::raw("insert into `support`(`ticket_no`, `institute_name`, `mobile_no`, `email_id`, `message`, `file`) values('$six_digit_random_number', '$institute_name', '$mobile_no', '$email', '$message', '$filename');"));
         $email_id = $email;
         $subject = 'Eageskool Support';
         $message = $message;
@@ -118,7 +120,7 @@ class HomeController extends Controller
         $data["email"] = $email_id;
         $data["title"] = $subject;
         $data["m_detail"] = $message;
-        $data["m_detail_2"] = $message_2;
+        $data["ticket_no"] = $six_digit_random_number;
 
         Mail::send('emails.support', $data, function($message)use($data, $file) {
             $message->to($data["email"])

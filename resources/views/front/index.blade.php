@@ -526,7 +526,7 @@
     <!-- start digital testimonial-section  -->
 <!--==================================================-->
 
-<div class="testimonial-section">
+{{-- <div class="testimonial-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -536,122 +536,122 @@
                 </div>
             </div>
         </div>
-            <div class="testimonial owl-carousel">
-                <div class="testimonial-area">
-                    <div class="col-lg-12">
-                        <div class="testimonial-single-box">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('front_asset/assets/images/resource/test1.png')}}" alt="">
-                                <div class="testimonial-sub-title">
-                                    <h3>Harvey Specter</h3>
-                                    <h4>Designer</h4>
-                                </div>
+        <div class="testimonial owl-carousel">
+            <div class="testimonial-area">
+                <div class="col-lg-12">
+                    <div class="testimonial-single-box">
+                        <div class="testimonial-thumb">
+                            <img src="{{ asset('front_asset/assets/images/resource/test1.png')}}" alt="">
+                            <div class="testimonial-sub-title">
+                                <h3>Harvey Specter</h3>
+                                <h4>Designer</h4>
                             </div>
-                            <div class="testimonial-disc">
-                                <p> This is a truly spectacular <br>
-                                    theme! custom page builder <br>
-                                    is definitely one of the most <br>
-                                    page builders I’ve ever used.</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <ul>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="testimonial-disc">
+                            <p> This is a truly spectacular <br>
+                                theme! custom page builder <br>
+                                is definitely one of the most <br>
+                                page builders I’ve ever used.</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <ul>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-area">
-                    <div class="col-lg-12">
-                        <div class="testimonial-single-box upper2">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('front_asset/assets/images/resource/test2.png')}}" alt="">
-                                <div class="testimonial-sub-title">
-                                    <h3>Richard Madsen</h3>
-                                    <h4>Designer</h4>
-                                </div>
+            </div>
+            <div class="testimonial-area">
+                <div class="col-lg-12">
+                    <div class="testimonial-single-box upper2">
+                        <div class="testimonial-thumb">
+                            <img src="{{ asset('front_asset/assets/images/resource/test2.png')}}" alt="">
+                            <div class="testimonial-sub-title">
+                                <h3>Richard Madsen</h3>
+                                <h4>Designer</h4>
                             </div>
-                            <div class="testimonial-disc">
-                                <p> This is a truly spectacular <br>
-                                    theme! custom page builder <br>
-                                    is definitely one of the most <br>
-                                    page builders I’ve ever used.</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <ul>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="testimonial-disc">
+                            <p> This is a truly spectacular <br>
+                                theme! custom page builder <br>
+                                is definitely one of the most <br>
+                                page builders I’ve ever used.</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <ul>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-area">
-                    <div class="col-lg-12">
-                        <div class="testimonial-single-box">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('front_asset/assets/images/resource/test3.png')}}" alt="">
-                                <div class="testimonial-sub-title">
-                                    <h3>Jenny James</h3>
-                                    <h4>Designer</h4>
-                                </div>
+            </div>
+            <div class="testimonial-area">
+                <div class="col-lg-12">
+                    <div class="testimonial-single-box">
+                        <div class="testimonial-thumb">
+                            <img src="{{ asset('front_asset/assets/images/resource/test3.png')}}" alt="">
+                            <div class="testimonial-sub-title">
+                                <h3>Jenny James</h3>
+                                <h4>Designer</h4>
                             </div>
-                            <div class="testimonial-disc">
-                                <p> This is a truly spectacular <br>
-                                    theme! custom page builder <br>
-                                    is definitely one of the most <br>
-                                    page builders I’ve ever used.</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <ul>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="testimonial-disc">
+                            <p> This is a truly spectacular <br>
+                                theme! custom page builder <br>
+                                is definitely one of the most <br>
+                                page builders I’ve ever used.</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <ul>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-area">
-                    <div class="col-lg-12">
-                        <div class="testimonial-single-box upper2">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('front_asset/assets/images/resource/test4.png')}}" alt="">
-                                <div class="testimonial-sub-title">
-                                    <h3>Bruce Wayne</h3>
-                                    <h4>Developer</h4>
-                                </div>
+            </div>
+            <div class="testimonial-area">
+                <div class="col-lg-12">
+                    <div class="testimonial-single-box upper2">
+                        <div class="testimonial-thumb">
+                            <img src="{{ asset('front_asset/assets/images/resource/test4.png')}}" alt="">
+                            <div class="testimonial-sub-title">
+                                <h3>Bruce Wayne</h3>
+                                <h4>Developer</h4>
                             </div>
-                            <div class="testimonial-disc">
-                                <p> This is a truly spectacular <br>
-                                    theme! custom page builder <br>
-                                    is definitely one of the most <br>
-                                    page builders I’ve ever used.</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <ul>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                    <li><span><i class="fas fa-star"></i></span></li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="testimonial-disc">
+                            <p> This is a truly spectacular <br>
+                                theme! custom page builder <br>
+                                is definitely one of the most <br>
+                                page builders I’ve ever used.</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <ul>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                                <li><span><i class="fas fa-star"></i></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div> --}}
     
 
 
